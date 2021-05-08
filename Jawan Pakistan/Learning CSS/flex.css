@@ -1,0 +1,59 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: beige;
+}
+
+div{
+    display: flex;
+    /* sare paragraph khud hi ek hi line ma ajaenge */
+    /* flex ki sari properties parent tag ma hi lagengi */
+    flex-wrap: wrap;
+        /* wrap flex p ki widht ko maintain rkhte hoe baki p ko next line ma lejaega */
+    /* flex will ignore display inline block and all things */
+    justify-content: center;
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* justify-content: flex-end; */
+    /* justify-content: flex-start; */
+    /* justify-content: first baseline; */
+    
+    /* flex ki property ha sirf flex ke sath chalti ha */
+    /* for horizontal alignmnet */
+    height: 100vh;
+    background-color:cornflowerblue;
+    align-items: center;
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* align-content:flex-start ; */
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* flex-direction: krne ke baad ab justify content ki properties column ma chalengi; */
+    /* flex margin gain naikrega to responsiveness ma acha effect dega */
+    /* flex ke bagair UI nai banti most helpful in mobile application*/
+}
+
+
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+/* https://flexboxfroggy.com/*/
+p{
+    width: 500px;
+    background-color: burlywood;
+    padding: 10px;
+}
+
+.para1{
+    flex: 1;
+
+    /* ye lagane ke baad justify content ki properties nahi chal rhi thi */
+}
+
+.para2{
+    flex: 3;
+}
+
+.para3{
+    flex: 5;
+}

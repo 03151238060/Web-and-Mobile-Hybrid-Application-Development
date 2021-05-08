@@ -1,0 +1,14 @@
+*{
+    font-family: sans-serif;
+}
+
+h1{
+    background-color: chartreuse;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p{
+    font-family: cursive;
+}
+.five{
+    font-size: 200%;
+}

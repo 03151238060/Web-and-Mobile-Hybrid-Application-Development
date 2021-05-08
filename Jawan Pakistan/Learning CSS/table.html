@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables in CSS</title>
+    <style>
+        table{
+            width: 500px;
+            margin: 20px auto ;
+            empty-cells: hide;
+            border-collapse: collapse;
+            /* border-spacing: 5px 20px; */
+            /* first value is for horizontal spacing and second is for vertical spacing */
+            
+        }
+        /* tr{
+            /* border: 2px solid red; */
+            /* border-bottom: 1px solid gray;
+        } */
+        th,td{
+            /* border-bottom: 1px solid red; */
+            text-align: center;
+        }
+
+        tbody tr:nth-child(even){
+            background-color: lightskyblue;
+            border-bottom:1px solid lightgray;
+        }
+        thead{
+            background-color: darkcyan;
+            color: white;
+        }
+        tbody{
+            background-color: rgb(243, 243, 243);
+        }
+        tbody tr:hover{
+            background-color: rgb(59, 150, 255);
+        }
+        thead:hover{
+            background-color: tomato;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Father Name</th>
+                <th>Phone No.</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Wajahat</td>
+                <td>Saqib</td>
+                <td>0234429512</td>
+            </tr>
+            <tr>
+                <td>Ahmed</td>
+                <td>Naveed</td>
+                <td>0283458729</td>
+            </tr>
+            <tr>
+                <td>Ali</td>
+                <td>Khan</td>
+                <td>03232951834</td>
+            </tr>
+            <tr>
+                <td>Zain</td>
+                <td>Naeem</td>
+                <td>02983474944</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

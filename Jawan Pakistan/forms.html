@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <!-- <h1>HTML Forms</h1>
+    <form method="GET">
+        <p>This is where form control will appear</p>
+    </form> -->
+    <form >
+        <p>Username:
+            <input type="text" name="Username" maxlength="15">
+        </p>
+        <p>Password:
+            <input type="password" name="Password" maxlength="7">
+        </p><p>Tell us about your opinion:</p>
+            <textarea name="comments"  cols="20" rows="10">Enter your comments</textarea>
+        <p>Please select your favourite 
+            Genre
+        </p>
+        <input type="radio" name="Genre" value="Male" checked="checked">Male
+        <input type="radio" name="Genre" value="Female">Female
+        <input type="radio" name="Genre" value="Other">Other
+        <p>Select my favourite Music:</p>
+        <br>
+        <input type="checkbox" name="Music" value="Romantic">Romantic
+        <input type="checkbox" name="Music" value="Classical">Classical
+        <input type="checkbox" name="Music" value="Bollywood">Bollywood
+        <input type="checkbox" name="Music" value="Action">Action
+    
+        <p>Which Music you listen on your device</p>
+        <select name="Musics" multiple="multiple" size="1">
+            <option value="Ipad">Ipad</option>
+            <option value="Apple" selected="selected">Apple</option>
+            <option value="Laptop" selected="selected">Laptop</option>
+        </select>
+        <p>Upload your picture here</p>
+        <input type="file" name="User Pic">
+        <br>
+        <input type="submit" value="Confirmed">
+        <p>Subscribe to our E-Mail list</p>
+        <input type="text " name="e-mail">
+        <input type="image" src="sadf.jpg" name="Subscribe" value="Subscribe " width="100" height="20">
+    </form>
+</body>
+</html>

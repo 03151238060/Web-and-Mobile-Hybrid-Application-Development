@@ -1,0 +1,8 @@
+/* standard name for css 
+or is ko new folder ke andar rkho (best practice) */
+p{
+    color: rgb(255, 0, 0);
+}
+/* p is selector 
+{}is declaration */
+
