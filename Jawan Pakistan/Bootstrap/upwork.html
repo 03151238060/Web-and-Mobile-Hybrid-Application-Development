@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UpWork</title>
+    <link rel="stylesheet" href="upwork.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+</head>
+
+<body>
+    <!-- navbar starts -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img
+                    src="data:image/png;base64,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"
+                    width="120px" alt="None"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Find Talent</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Find Work
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Why UpWork
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Enterprise</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li> -->
+                </ul>
+                <form class="d-flex">
+                    <input class="px-3 rounded-pill border bg-light text-success" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <span class="text-success green p-2">
+                        <a href="#">LogIn</a>
+
+
+
+                    </span>
+                    <button class="btn btn-success px-4 rounded-pill " type="submit">SignUp</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar ends -->
+
+    <!-- banner starts -->
+    <div>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-6  py-3">
+                    <h1 class="myHeading  green">
+                        Join the world's <br>
+                        work marketplace
+                    </h1>
+                    <p class="fs-3">
+                        Find great talent. Build your business.
+                        Take your career to the next level.
+
+                    </p>
+
+                    <div class="my-2">
+                        <button class="btn btn-success px-5 rounded-pill ">LogIn</button>
+                        <button class="btn btn-outline-success px-5 rounded-pill ">SignUp</button>
+                    </div>
+                    <!-- Logo div starts -->
+                    <div>
+                        <p class="fs-5 text-secondary pt-2">Trusted By</p>
+                        <div class="row py-3">
+                            <div class="col-md-3 col-sm-6 col-xs-6 ">
+                                <img src="https://www.upwork.com/static/assets/Brontes/e98ae36/img/microsoft.77d03cc.svg"
+                                    width="100%" alt="None">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-6 ">
+                                <img src="https://www.upwork.com/static/assets/Brontes/e98ae36/img/airbnb.2baea51.svg"
+                                    width="100%" alt="None">
+
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-6 ">
+                                <img src="https://www.upwork.com/static/assets/Brontes/e98ae36/img/bissell.dcb03c9.svg"
+                                    width="100%" alt="None">
+
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-6 ">
+
+                                <img src="https://www.upwork.com/static/assets/Brontes/e98ae36/img/godaddy.75298df.svg"
+                                    width="100%" alt="None">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Logo div ends -->
+                </div>
+                <div class="col-md-6 ">
+                    <img src="banner.png" width="100%" alt="Banner Here">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- banner ends -->
+
+    <!-- for-client starts -->
+    <div class="container">
+        <div class=" forClient p-4 my-3">
+            <p class="fs-3 text-white">For Clients</p>
+            <div class="py-4">
+                <h1 class="myHeading text-warning">Find Talent <br> Your Way</h1>
+            </div>
+            <p class="fs-3 text-dark">Work with the largest network of independent <br> professionals and get things
+                done—from quick <br> turnarounds to big transformations. </p>
+            <div class="py-4">
+                <div class="row">
+                    <div class="col-md-4 py-1">
+                        <div class="myCard px-3 py-2">
+                            <p class="fs-1 p-0">Post a job and Hire a Pro</p>
+                            <div class="py-4"></div>
+                            <p>Talent MarketPlace<sup>TM</sup><sub><i class="fad fa-arrow-alt-right"></i></sub></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 py-1">
+                        <div class="myCard px-3 py-2">
+                            <p class="fs-1 p-0">Post a job and Hire a Pro</p>
+                            <div class="py-4"></div>
+                            <p>Talent MarketPlace<sup>TM</sup><sub><i class="fad fa-arrow-alt-right"></i></sub></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 py-1">
+                        <div class="myCard px-3 py-2">
+                            <p class="fs-1 p-0">Post a job and Hire a Pro</p>
+                            <div class="py-4"></div>
+                            <p>Talent MarketPlace<sup>TM</sup><sub><i class="fad fa-arrow-alt-right"></i></sub></p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- for-client ends -->
+
+    <!-- Hire starts -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="myHeading">Hire a pro
+                    for any skill</h1>
+                    <ul class="linkedlist">
+                        <li><a href="#">Development & IT</a></li>
+                        <li><a href="#">Design & Creative</a></li>
+                        <li><a href="#">Sales & Marketing</a></li>
+                        <li><a href="#">Writing & Translation</a></li>
+                        <li><a href="#">Admin & Customer Support</a></li>
+                        <li><a href="#">Finance & Accounting</a></li>
+                        <li><a href="#">See All Specialization</a></li>
+                    </ul>
+            </div>
+            <div class="col-md-6">
+                <img  class="myRadius" src="https://www.upwork.com/static/assets/Brontes/04b70ab/img/it.90016e3.jpg" width="100%" alt="">
+                <div class="chips py-5">
+                    <a href="#">AR/VR Development</a>
+                    <a href="#">Automation Testing</a>
+                    <a href="#">Back-End Development</a>
+                    <a href="#">Back-End Development</a>
+                    <a href="#">Business Applications Development</a>
+                    <a href="#">CMS Development</a>
+                    <a href="#">Coding Tutoring</a>
+                    <a href="#">Cloud Engineering</a>
+                    <a href="#">2D Animation</a>
+                    <a href="#">3D Animation</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hire ends -->
+
+    <!-- for-client2 starts -->
+    <div class="container">
+        <div style="overflow: hidden;"class="row forClient">
+            <div class="col-md-6"></div>
+            <div class="col-md-6 bg-primary">
+                <div class="  p-4 my-3">
+                    <p class="fs-3 text-white">For talent</p>
+                    <div class="py-4">
+                        <h1 class="myHeading text-white">Find great <br>
+                            work</h1>
+                    </div>
+                    <p class="fs-3 text-white">Meet clients you’re excited to work with and take
+                        your career or business to new heights. </p>
+                        <div class="p-5"></div>
+                        <div class="py-4">
+                        <hr style="color: white;">
+                        <div class="row">
+                            <div class="col-md-4 py-1">
+                                <p class="fs-6 text-white">Find opportunities for every stage of your freelance career</p>
+                            </div>
+                            <div class="col-md-4 py-1">
+                                <p class="fs-6 text-white" >Find opportunities for every stage of your freelance career</p>
+                                
+                            </div>
+                            <div class="col-md-4 py-1">
+                                <p class="fs-6 text-white">Find opportunities for every stage of your freelance career</p>
+                               
+                            </div>
+        
+                        </div>
+                        <div>
+                            <button class="btn-white px-5 rounded-pill">Find Opportunities</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <!-- for-client2 ends -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="myHeading">What they’re <br>
+                    saying</h1>
+                    <div class="text-end">
+                        <div style="width: 70%;">
+                        <img class="myRadius"src="https://www.upwork.com/static/assets/Brontes/04b70ab/img/cara.4d5446c.jpg"  width="100%" alt="">
+                        <p class="text-success fs-3">“The freelance talent we work with are more productive than we ever thought possible.”</p>
+                        <hr>
+                        <p>Cara Bedford</p>
+                        <p class="text-muted">Director of Strategic Marketing, CompuVision
+                        </p>
+                        </div>
+
+                    </div>
+            </div>
+            <div class="col-md-6 my-3">
+                    <div class="text-start">
+                        <div style="width: 70%;">
+                        <img class="myRadius"src="https://www.upwork.com/static/assets/Brontes/04b70ab/img/sam.10e14e3.jpg"  width="100%" alt="">
+                        <p class="text-success fs-3">“The freelance talent we work with are more productive than we ever thought possible.”</p>
+                        <hr>
+                        <p>Cara Bedford</p>
+                        <p class="text-muted">Director of Strategic Marketing, CompuVision
+                        </p>
+                        </div>
+
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- for-client3 starts -->
+    <div class="container my-2">
+        <div style="overflow: hidden;"class="row forClient">
+            
+            <div class="col-md-6 bg-success">
+                <div class="  p-4 my-3">
+                    <p class="fs-3 text-white">For talent</p>
+                    <div class="py-4">
+                        <h1 class="myHeading text-white">Find great <br>
+                            work</h1>
+                    </div>
+                    <p class="fs-3 text-white">Meet clients you’re excited to work with and take
+                        your career or business to new heights. </p>
+                        <div class="p-5"></div>
+                        <div class="py-4">
+                        <hr style="color: white;">
+                        <div class="row">
+                            <div class="col-md-4 py-1">
+                                <p class="fs-6 text-white">Find opportunities for every stage of your freelance career</p>
+                            </div>
+                            <div class="col-md-4 py-1">
+                                <p class="fs-6 text-white" >Find opportunities for every stage of your freelance career</p>
+                                
+                            </div>
+                            <div class="col-md-4 py-1">
+                                <p class="fs-6 text-white">Find opportunities for every stage of your freelance career</p>
+                               
+                            </div>
+        
+                        </div>
+                        <div>
+                            <button class="btn-white px-5 rounded-pill">Find Opportunities</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-6"></div>
+            
+        </div>
+        
+    </div>
+
+    <!-- for-client3 ends -->
+
+    <!-- topskills starts -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 py-5">
+                <ul class="linkedlist">
+                    <li><a href="#">Development & IT</a></li>
+                    <li><a href="#">Design & Creative</a></li>
+                    <li><a href="#">Sales & Marketing</a></li>
+                    <li><a href="#">Writing </a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 py-5">
+                <ul class="linkedlist2 fs-5">
+                <li><a href="#">Android Developer</a></li>
+                <li><a href="#">Android Developer</a></li>
+                <li><a href="#">Android Developer</a></li>
+                <li><a href="#">Android Developer</a></li>
+                <li><a href="#">Android Developer</a></li>
+                <li><a href="#">Android Developer</a></li>
+                <li><a href="#">Android Developer</a></li>
+                <li><a href="#">Android Developer</a></li>
+                <li><a href="#">Android Developer</a></li>
+                <li><a href="#">Android Developer</a></li>
+                <li><a href="#">Android Developer</a></li>
+                <li><a href="#">Android Developer</a></li>
+                <li><a href="#">Android Developer</a></li>
+                <li><a href="#">Android Developer</a></li>
+                <li><a href="#">Android Developer</a></li>
+                <li><a href="#">Android Developer</a></li>
+            </ul>
+
+
+            </div>
+            <div class="col-md-4 py-5">
+                <ul class="linkedlist2 fs-5">
+                    <li><a href="#">MERN Stack Developer</a></li>
+                    <li><a href="#">MERN Stack Developer</a></li>
+                    <li><a href="#">MERN Stack Developer</a></li>
+                    <li><a href="#">MERN Stack Developer</a></li>
+                    <li><a href="#">MERN Stack Developer</a></li>
+                    <li><a href="#">MERN Stack Developer</a></li>
+                    <li><a href="#">MERN Stack Developer</a></li>
+                    <li><a href="#">MERN Stack Developer</a></li>
+                    <li><a href="#">MERN Stack Developer</a></li>
+                    <li><a href="#">MERN Stack Developer</a></li>
+                    <li><a href="#">MERN Stack Developer</a></li>
+                    <li><a href="#">MERN Stack Developer</a></li>
+                    <li><a href="#">MERN Stack Developer</a></li>
+                    <li><a href="#">MERN Stack Developer</a></li>
+                    <li><a href="#">MERN Stack Developer</a></li>
+                    <li><a href="#">MERN Stack Developer</a></li>
+                </ul>
+    
+    
+
+            </div>
+        </div>
+    </div>
+    <!-- topskills ends -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

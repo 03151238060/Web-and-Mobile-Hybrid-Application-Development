@@ -1,0 +1,87 @@
+.myHeading{
+    font-family: 'Roboto Slab', serif;
+    font-size: 4em;
+}
+.green 
+{
+    color:#14a800;
+}
+.forClient{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYdfiaj-OLNHVc3SJ7GFQ55abYw1e6indmZg&usqp=CAU');
+    background-position: top;
+    background-size: contain;
+    border-radius: 8px;
+    /* background-repeat: no-repeat; */
+}
+
+.myCard{
+    background-color: #14a800;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.myCard:hover{
+    background-color: rgb(255, 255, 255);
+    color: #14a800;
+}
+
+.myRadius{
+    border-radius: 8px;
+}
+.linkedlist{
+    list-style: none;
+    padding: 0px;
+}
+
+/* .linkedlist li{
+    padding: 0px 0px;
+} */
+
+.linkedlist a{
+    text-decoration: none;
+    color: lightgray;
+    font-size: 2.5em;
+    
+}
+
+.linkedlist a:hover{
+    /* text-decoration: none; */
+    color: #14a800;
+    /* font-size: 2.5em; */
+
+}
+
+.chips a{
+    text-decoration: none;
+    color: gray;
+    padding: 5px 8px;
+    display: inline-block;
+    border: 1px solid gray;
+    border-radius: 50px;
+    margin: 5px;
+}
+
+.chips a:hover{
+    background-color: lightgrey;
+    color: gray;
+}
+
+.linkedlist2{
+    list-style: none;
+    padding: 0px;
+}
+
+/* .linkedlist li{
+    padding: 0px 0px;
+} */
+
+.linkedlist2 a{
+    text-decoration: none;
+    /* color: lightgray; */
+    font-size: 1.5em;
+    color: black;
+}
+.linkedlist2 a:hover{
+    
+    color: rgb(63, 62, 62);
+}
