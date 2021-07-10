@@ -526,3 +526,414 @@
 // var late=350;
 // var gross=net+late;
 // document.write("<h1>K-Electric Bill</h1><br>"+"Customer Name: <b>ABC Customer</b><br> Month : "+a.getMonth()+"<br>Number of Units: 416<br> Charges : 16<br>"+"Net Amount(Payable with in due date) : "+net+"<br>Late Payment Surcharges: "+late+"<br>Gross Payment (Payable after due date): "+gross)
+
+
+                //Chap # 35-38
+
+
+                     
+// 1. Write a function that displays current date & time in your
+// browser.
+
+// function time(){
+//         var a=new Date();
+//         alert (a);
+// }
+// time();
+
+// 2. Write a function that takes first & last name and then it
+// greets the user using his full name.
+
+// var a=prompt("Enter your First Name");
+// var b=prompt("Enter your Last Name ");
+// function greet(){
+//         var c= a+" "+b;
+//         alert("Hi! How are you!  "+c)
+// }
+// greet();
+
+// 3. Write a function that adds two numbers (input by user)
+// and returns the sum of two numbers.
+
+// var a=+prompt("Enter first number");
+// var b=+prompt("Enter Second Number");
+// function add(){
+//         var c=a+b;
+//         alert (c);
+// }
+// add ();
+
+// 4. Calculator:
+// Write a function that takes three arguments num1, num2
+// & operator & compute the desired operation. Return and
+// show the desired result in your browser.
+
+// var x=+prompt("Enter a number");
+// var y=+prompt("Enter secomd number");
+// var z=prompt("Enter Operator");
+// function cal(p,q,r){
+//         if(r==="*"){
+//                 var a=p*q;
+//                 return a;
+//         }
+//         else if(r==="/"){
+//                 var b=p/q;
+//                 return b;
+//         }
+//         else if(r==="+"){
+//                 var c=p+q;
+//                 return c;
+//         }
+//         else if(r==="-"){
+//                 var d=p-q;
+//                 return d;
+//         }
+//         else{
+//                 alert("Undefined!")
+//         }
+// }
+// var j=cal(x,y,z);
+// alert(x+" "+z+" "+y+" = "+j);
+
+// 5. Write a function that squares its argument
+
+// var x=+prompt("Enter anumber");
+// function abc(){
+//         var c=x*x;
+//         alert (c);
+// }
+// abc(x);
+
+// 6. Write a function that computes factorial of a number.
+
+// var n=+prompt("Enter your number");
+// var ans=n;
+// function fact(num){
+//         if(num==0|| num==1){
+//                 return 1;
+//         }
+//         else{
+//                 for (var i=num-1;i>=1;i--){
+//                         ans=ans*i;
+//                 }
+//                 return(ans)
+//         }
+
+// }
+// var c=fact(n);
+// alert(c);
+
+// 7. Write a function that take start and end number as inputs
+// & display counting in your browser.
+
+// var x=+prompt("Enter a starting value");
+// var y=+prompt("Enter last value");
+// function value(p,q){
+//         for (var i=p;i<=q;i++){
+//          document.write(i+"<br>")
+//         }
+// }
+// value(x,y)
+
+// 8. Write a nested function that computes hypotenuse of a
+// right angle triangle.
+// Hypotenuse2 = Base2 + Perpendicular2
+
+// var base=+prompt("Enter base");
+// var perpen=+prompt("Enter perpendicular");
+// function hyp(b,p){
+//     var z=Math.sqrt(b*b+p*p)
+//     alert(z)
+// }
+// hyp(5,10);
+
+
+// 9. Write a function that calculates the area of a rectangle.
+//  A = width * height
+//  Pass width and height in following manner:
+// i. Arguments as value
+// ii. Arguments as variables
+
+// var x=+prompt("Enter height");
+// var y=+prompt("Enter width");
+// function rect(a,b){
+//         var z=a*b;
+//         alert("The area of rectangle is "+z)
+// }
+// rect(x,y)
+
+// 10. Write a JavaScript function that checks whether a passed
+// string is palindrome or not?
+// A palindrome is word, phrase, or sequence that reads the same backward as
+// forward, e.g., madam.
+
+//function palindrome(){
+//    var word = prompt("Enter a word")
+//    var reverse = "";
+//    for(var i=word.length-1; i>=0; i--){
+//        reverse += word[i]
+//    }
+    
+//    if(reverse==word){
+//        document.write("Given word is a palindrome")
+//    }
+//    else{
+//        document.write("Given word is not a palindrome")
+//    }
+//}
+//palindrome();
+
+// /11. Write a JavaScript function that accepts a string as 
+//a parameter and converts the first letter of each word of the string in upper case. 
+//EXAMPLE STRING : 'the quick brown fox'
+//EXPECTED OUTPUT : 'The Quick Brown Fox'
+
+// function str(){
+//     var string = prompt("Enter a string")
+//     var word = " "
+//     var check=" ";
+//     for(var i =0 ; i<=string.length-1;i++){
+//         if(i ==0){
+//             document.write(string[i].toUpperCase())
+//             word += string[i]
+//         }
+//         else if(string[i]==check){
+//             document.write(string[i+1].toUpperCase())
+            
+//         }
+//         else{
+//             document.write(word[i])
+        
+//         }                                                                                                                                                                                                                                                                                                                                       
+
+//     }
+// }
+// str();
+
+// 14. The Geometrizer
+// Create 2 functions that calculate properties of a circle, using
+// the definitions here.
+// Create a function called calcCircumference:
+// • Pass the radius to the function.
+// • Calculate the circumference based on the radius, and output
+// "The circumference is NN".
+// Create a function called calcArea:
+// • Pass the radius to the function.
+// • Calculate the area based on the radius, and output "The area
+// is NN".
+// Circumference of circle = 2πr
+// Area of circle = πr
+
+// var r=+prompt("Enter radius");
+// function calccircumference(a){
+//        var x=3.142;
+//        var d= 2*x*a;
+//        alert("The circumference of a circle is "+d);
+// }
+// calccircumference(r);
+// function calcarea(b){
+//         var y=3.142;
+//         var c=y*b*b;
+//         alert("The area of circle is "+c)
+// }
+// calcarea(r);
+
+
+//chap 38-42
+
+
+// 1. Write a custom function power ( a, b ), to calculate the value of 
+// a raised to b.
+
+// function power(a,b){
+//         console.log('Ans is '+Math.pow(a,b))
+// }
+// power(2,4)
+
+// 2. Any year is entered through the keyboard. Write a function to 
+// determine whether the year is a leap year or not.
+
+// var year=+prompt("Enter any year")
+// if (year%4 === 0){
+//         alert(year+" is leap year")
+// }
+// else{
+//         alert(year+" is not leap year")
+
+// }
+
+
+// 3. If the lengths of the sides of a triangle are denoted by a, b, and 
+// c, then area of triangle is given by
+// area = S(S − a)(S − b)(S − c)
+// where, S = ( a + b + c ) / 2
+// var s;
+// var a=2;
+// var b=2;
+// var c=2;
+// function perimeter(a,b,c){
+//         s=(a+b+c)/2
+// }
+// function area(s,a,b,c){
+
+//         var area=s*(s-a)*(s-b)*(s-c)
+//         console.log('Area is found to be '+area)
+// }
+// perimeter(a,b,c)
+// area(s,a,b,c)
+
+// 4. Write a function that receives marks received by a student in 3 
+// subjects and returns the average and percentage of these
+// marks. there should be 3 functions one is the mainFunction 
+// and other are for average and percentage. Call those functions 
+// from mainFunction and display result in mainFunction
+
+// function mainFunction(m1,m2,m3){
+//         var avg=average(m1,m2,m3)
+//         var percent=percentage(m1,m2,m3)
+//         console.log("Average is : "+avg+"\n Percentage is : "+percent )
+// }
+
+// function average(m1,m2,m3){
+//         var avg=(m1+m2+m3)/3
+//         return avg;
+// }
+
+// function percentage(m1,m2,m3){
+//         var perc=((m1+m2+m3)/300)*100
+//         return perc
+// }
+
+
+// mainFunction(90,94,99)
+
+// 5. You have learned the function indexOf. Code your own custom 
+// function that will perform the same functionality. You can code 
+// for single character as of now
+// var count=-1;
+// var a='Pakistan'
+// function index(a){
+//         for (var i=0;i<a.length;i++){
+//                 if(a[i]==='n'){
+//                         count++;
+//                         console.log("n is present at index ",count," in Pakistan")
+//                         break;
+//                 }
+//                 else{
+//                         count++
+//                 }
+//         }
+// }
+// index(a)
+
+// 6. Write a function to delete all vowels from a sentence. Assume 
+// that the sentence is not more than 25 characters long
+
+
+//ye sahi output nai deraha tha 
+// var a = 'Pakistan is beautiful';
+
+// function index(a) {
+//         for (var i = 0; i < a.length; i++) {
+//                 if (a[i] === 'a' || a[i] === 'i' || a[i] === 'o' || a[i] === 'e' || a[i] === 'u') {
+
+
+
+//                         a.splice(a[i],1," ");
+//                 }
+
+//         }
+//         console.log("After elimination the vowels the sentence is" + a)
+// }
+// index(a)
+
+
+// 7. Write a function with switch statement to count the number of 
+// occurrences of any two vowels in succession in a line of text. 
+// For example, in the sentence
+
+// “Pleases read this application and give me gratuity”
+// Such occurrences are ea, ea, ui.
+
+
+// function vowel() {
+//         var text = 'Pleases reed this application and give me gratuity';
+//         var flag = 0;
+//         for (var i = 0; i < text.length; i++) {
+//                 if (text[i] === 'a' || text[i] === 'e' || text[i] === 'i' || text[i] === 'o' || text[i] === 'u') {
+//                         flag += 1;
+//                         if (flag === 2) {
+//                                 console.log(text[i - 1] + text[i])
+//                         }
+//                 }
+//                 else {
+//                         flag = 0;
+//                 }
+//         }
+// }
+// vowel();
+
+
+// 8. The distance between two cities (in km.) is input through the 
+// keyboard. Write four functions to convert and print this 
+// distance in meters, feet, inches and centimeters.
+
+// var input=+prompt("Enter distance between two cities")
+// function meters(inp){
+//         console.log('Answer in meters is '+(inp*1000))
+// }
+
+// function feet(inp){
+//         console.log('Answer in feet is '+(inp*3280.84))
+// }
+
+// function inches(inp){
+//         console.log('Answer in inches is '+(inp*39370.1))
+
+// }
+
+// function centimeters(inp){
+//         console.log('Answer in centimeter is '+(inp*100000))
+
+// }
+
+// meters(input)
+// inches(input)
+// feet(input)
+// centimeters(input)
+
+
+// 9. Write a program to calculate overtime pay of employees. 
+// Overtime is paid at the rate of Rs. 12.00 per hour for every hour 
+// worked above 40 hours. Assume that employees do not work 
+// for fractional part of an hour.
+
+
+// var hours = +prompt("enter how many hours you worked")
+// function overtime(hours) {
+//         if (hours > 40) {
+//                 console.log("Your overtime pay is " + (((hours - 40) * 12) * 3 / 4) + ' Rs')
+//                 console.log('Pay is reduced because you do not work for fractional part of an hour')
+//         }
+// }
+// overtime(hours)
+
+
+// 10. A cashier has currency notes of denominations 10, 50 and 
+// 100. If the amount to be withdrawn is input through the 
+// keyboard in hundreds, find the total number of currency notes 
+// of each denomination the cashier will have to give to the 
+// withdrawer.
+
+
+var amount=+prompt("Enter amount to withdraw");
+function cashier(amount){
+var hundreds=Math.floor(amount/100);
+var fifty=Math.floor((amount-(hundreds*100))/50);
+var tens=Math.floor((amount-(hundreds*100)-(fifty*50))/10);
+
+console.log('Cashier has to give '+hundreds+" hundred notes "+fifty+" fifty notes "+tens+" ten notes ")
+
+}
+
+cashier(amount)
