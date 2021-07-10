@@ -17,7 +17,7 @@ console.log(Math.ceil(no))
 //string to number conversion
 
 var no="10.34"
-console.log(parseInt(no)    )
+console.log(parseInt(no)    )//parse ignores  string value like alphabets in number
 console.log(parseFloat(no)    )
 console.log(Number(no)    )
 console.log(+no    )
