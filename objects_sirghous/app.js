@@ -17,9 +17,15 @@ var student2=new Student("Ahmed",467);
 console.log(student1.getName())
 
 console.log("rollno" in student2)
+// in un properties ko bhi check kry ga jo object ke prototype 
+// ke andr bhi ha
+
 // to check whether roll no is present in student2 or not
 
 for(var prop in student2){
     console.log(student2[prop]);
 }
+
 console.log(student2.hasOwnProperty("name"))
+// has sirf object wali properties ko dekhy ga
+
